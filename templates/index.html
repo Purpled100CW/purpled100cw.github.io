@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Detection</title>
+</head>
+<body>
+    <h1>Upload Image for Car Detection</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Detect Cars</button>
+    </form>
+    <br>
+    {% if image %}
+    <h2>Detected Cars</h2>
+    <img src="data:image/png;base64,{{ image }}" alt="Detected Cars">
+    {% endif %}
+</body>
+</html>

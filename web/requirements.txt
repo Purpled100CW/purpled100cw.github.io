@@ -1,4 +1,0 @@
-Flask
-torch
-torchvision
-opencv-python
