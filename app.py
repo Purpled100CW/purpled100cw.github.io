@@ -1,8 +1,9 @@
-from flask import Flask, request, render_template, send_file, jsonify
+from flask import Flask, request, render_template
 from PIL import Image
 import cv2
 import numpy as np
 import io
+from base64 import b64encode 
 
 app = Flask(__name__)
 
